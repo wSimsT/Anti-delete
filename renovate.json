@@ -1,4 +1,9 @@
 {
-  automerge: true,
-  automergeFailureComment: 'on-error'
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "major", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeFailureComment": "on-error"
+    }
+  ]
 }
